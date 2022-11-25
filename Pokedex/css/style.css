@@ -1,0 +1,107 @@
+/* Regras genérica */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  --default-value: 10px;
+  /* Cores */
+  --red-background: #cc5050;
+  --red-header: #e3350d;
+  --light-green: #9bcc50;
+  --orange: #fd7d24;
+  --yellow: #f7de3f;
+  --olive: #739f40;
+  --blue: #4592c4;
+  --brown: #d56723;
+}
+
+h1 {
+  font-size: 1rem;
+}
+
+p {
+  font-size: 0.75rem;
+}
+
+body {
+  background-color: var(--red-background);
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  padding: 1rem;
+  column-gap: 80px;
+  row-gap: 1.25rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: var(--default-value);
+  color: #ffffff;
+  font-weight: bold;
+  padding: 0.5rem 1.25rem;
+}
+
+.card > img {
+  width: 5rem;
+}
+
+header {
+  padding: var(--default-value);
+  background-color: var(--red-header);
+  color: #ffffff;
+  text-align: center;
+}
+
+.light-green {
+  background-color: var(--light-green);
+}
+
+.olive {
+  background-color: var(--olive);
+}
+
+.yellow {
+  background-color: var(--yellow);
+}
+
+.orange {
+  background-color: var(--orange);
+}
+
+.blue {
+  background-color: var(--blue);
+}
+
+.brown {
+  background-color: var(--brown);
+}
+
+/* Regras para telas médias ou Tablets */
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 24px;
+  }
+  main {
+    grid-template-columns: repeat(3, auto);
+  }
+}
+
+/* Regras para telas grandes */
+@media screen and (min-width: 992px) {
+  html {
+    font-size: 32px;
+  }
+  main{
+    grid-template-columns: repeat(4,auto);
+    column-gap: 4vw;
+  }
+}
