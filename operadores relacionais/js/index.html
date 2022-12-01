@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificação de entrada</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/verify.js" defer></script>
+</head>
+<body class="d-flex justify-content-center align-items-center" style="height: 100vh;">
+    <main class="w-25 h-50 border border-2 border-primary rounded p-4">
+        <input type="number" id="yearOfBirth" class="form-control mb-3">
+        <div class="invalid-feedback" id="feedback"></div>
+        <div class="form-checkbox">
+            <input type="checkbox" id="withMajor">
+            <label for="withMajor" class="form-checkbox-label">Acompanhando de um responsável</label>
+        </div>
+        <button id="btnVerify" class="btn btn-primary">Verificar</button> 
+        </main>
+</body>
+</html>
